@@ -27,6 +27,15 @@
   notify:
     - "restart flower"
 
+- name: create flower configuration file
+  template: >
+    src=edx/app/flower/flowerconfig.py.j2
+    dest={{ flower_conf_dir }}/flowerconfig.py
+    owner={{ FLOWER_USER }} group={{ common_web_group }}
+    mode=0644
+  notify:
+    - "restart flower"
+
 - name: create virtualenv and install Python requirements
   pip: >
     name="{{ item }}"
