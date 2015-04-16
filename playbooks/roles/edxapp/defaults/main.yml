@@ -23,7 +23,7 @@ EDXAPP_DJFS:
   directory_root: '{{ edxapp_data_dir }}/django-pyfs/static/django-pyfs'
   url_root : '/static/django-pyfs'
 
-EDXAPP_LMS_BASE: "www.edustack.org"
+EDXAPP_LMS_BASE: "x.edustack.org"
 EDXAPP_PREVIEW_LMS_BASE: "preview.edustack.org"
 EDXAPP_CMS_BASE: "studio.edustack.org"
 
@@ -181,7 +181,7 @@ EDXAPP_BOOK_URL: ""
 # This needs to be set to localhost
 # if xqueue is run on the same server
 # as the lms (it's sent in the request)
-EDXAPP_SITE_NAME: 'www.edustack.org'
+EDXAPP_SITE_NAME: 'x.edustack.org'
 EDXAPP_LMS_SITE_NAME: "{{ EDXAPP_SITE_NAME }}"
 EDXAPP_CMS_SITE_NAME: 'studio.edustack.org'
 EDXAPP_MEDIA_URL:  "/media"
